@@ -1,0 +1,11 @@
+{  
+"custom/media": {
+    "exec": "~/.config/waybar/scripts/media-player.py",
+    "return-type": "json",
+    "format": "{}",
+    "tooltip": "{tooltip}",
+    "on-click": "playerctl play-pause",
+    "min-length": 5,
+    "max-length": 35
+  },
+}

@@ -1,0 +1,33 @@
+{
+  "layer": "top",
+  "height": 42,
+  "spacing": 6,
+  "include": [
+    "./modules/groups.jsonc",
+    "./modules/distro.jsonc",
+    "./modules/cpu.jsonc",
+    "./modules/gpu.jsonc",
+    "./modules/memory.jsonc",
+    "./modules/workspace.jsonc",
+    "./modules/redlight.jsonc",
+    "./modules/lock.jsonc",
+    "./modules/audio.jsonc",
+    "./modules/clock.jsonc",
+    "./modules/tray-notif.jsonc"
+  ],
+  "modules-left": [
+    "group/distro-group",
+    "group/resource"
+  ],
+  "modules-center": [
+    "group/redlight",
+    "hyprland/workspaces",
+    "group/lock"
+  ],
+  "modules-right": [
+    "group/audio",
+    "clock#time",
+    "clock#calendar",
+    "group/tray-group"
+  ]
+}

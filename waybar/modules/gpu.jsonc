@@ -1,0 +1,10 @@
+{
+        "custom/gpu": {
+        "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits",
+        "format": "󰘚 {}%",
+        "min-length": 6,
+        "max-length": 6,
+        "return-type": "",
+        "interval": 1
+        }
+}

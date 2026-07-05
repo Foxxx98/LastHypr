@@ -1,0 +1,9 @@
+{
+  "custom/redlight": {
+    "return-type": "json",
+    "exec": "if pgrep -x hyprsunset > /dev/null; then echo '{\"text\":\"󰛨\",\"class\":\"activated\"}'; else echo '{\"text\":\"󰛩\",\"class\":\"deactivated\"}'; fi",
+    "interval": 2,
+    "on-click": "pkill -x hyprsunset || hyprsunset -t 3500",
+    "tooltip": false
+  }
+}

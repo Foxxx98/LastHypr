@@ -1,0 +1,7 @@
+{
+	"custom/lock": {
+                "tooltip": false,
+                "on-click": "hyprlock &",
+                "format": ""
+        }
+}

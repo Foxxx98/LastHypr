@@ -1,0 +1,22 @@
+
+
+configuration {
+    show-icons: true;
+    drun-display-format: "{icon} {name}";
+    font: "FreeMono 12";
+    modi: ["drun", "window", "run"];
+    icon-theme: "Papirus-Dark";
+    terminal: "alacritty";
+    location: 0;
+    disable-history: false;
+    sidebar-mode: false;
+    display-drun: " ";
+    display-run: " ";
+    display-window: " ";
+}
+
+element-icon {
+    size: 32px;
+}
+
+@theme "~/.config/rofi/theme/ThouRF.rasi"
