@@ -1,0 +1,154 @@
+
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "auto",
+        "source": "arch",
+        "width": 25,
+        "height": 25,
+        "padding": {
+            "top": 3,
+            "left": 4,
+            "right": 0
+        },
+        "color": {
+            "1": "{{colors.secondary.default.hex}}",
+            "2": "{{colors.secondary.default.hex}}"
+        }
+    },
+    "display": {
+        "separator": " ➜  "
+    },
+    "modules": [
+        "break",
+        "break",
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[37m┌──────────────────────────────────────────────────────────────┐"
+        },
+        {
+            "type": "title",
+            "key": " US ",
+            "keyColor": "{{colors.secondary.default.hex}}"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[37m├──────────────────────────────────────────────────────────────┤"
+        },
+        {
+            "type": "kernel",
+            "key": " OS ",
+            "keyColor": "{{colors.secondary.default.hex}}",
+            "outputColor": "{{colors.primary.default.hex}}"
+        },
+        {
+            "type": "os",
+            "key": " ├  ",
+            "keyColor": "{{colors.secondary.default.hex}}",
+            "outputColor": "{{colors.primary.default.hex}}"
+        },
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": " ├ 󰏖 ",
+            "keyColor": "{{colors.secondary.default.hex}}",
+            "outputColor": "{{colors.primary.default.hex}}"
+        },
+        {
+            "type": "shell",
+            "key": " └  ",
+            "keyColor": "{{colors.secondary.default.hex}}",
+            "outputColor": "{{colors.primary.default.hex}}"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[37m├──────────────────────────────────────────────────────────────┤"
+        },
+        {
+            "type": "wm",
+            "key": " WM ",
+            "keyColor": "{{colors.secondary.default.hex}}",
+            "outputColor": "{{colors.primary.default.hex}}"
+        },
+        {
+            "type": "wmtheme",
+            "key": " ├ 󰉼 ",
+            "keyColor": "{{colors.secondary.default.hex}}",
+            "outputColor": "{{colors.primary.default.hex}}"
+        },
+        {
+            "type": "icons",
+            "key": " ├ 󰀻 ",
+            "keyColor": "{{colors.secondary.default.hex}}",
+            "outputColor": "{{colors.primary.default.hex}}"
+        },
+        {
+            "type": "cursor",
+            "key": " ├  ",
+            "keyColor": "{{colors.secondary.default.hex}}",
+            "outputColor": "{{colors.primary.default.hex}}"
+        },
+        {
+            "type": "terminal",
+            "key": " ├  ",
+            "keyColor": "{{colors.secondary.default.hex}}",
+            "outputColor": "{{colors.primary.default.hex}}"
+        },
+        {
+            "type": "terminalfont",
+            "key": " └  ",
+            "keyColor": "{{colors.secondary.default.hex}}",
+            "outputColor": "{{colors.primary.default.hex}}"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[37m├──────────────────────────────────────────────────────────────┤"
+        },
+        {
+            "type": "host",
+            "format": "{5} {1} Type {2}",
+            "key": " PC ",
+            "keyColor": "{{colors.secondary.default.hex}}",
+            "outputColor": "{{colors.primary.default.hex}}"
+        },
+        {
+            "type": "cpu",
+            "format": "{1} ({3}) @ {7} GHz",
+            "key": " ├  ",
+            "keyColor": "{{colors.secondary.default.hex}}",
+            "outputColor": "{{colors.primary.default.hex}}"
+        },
+        {
+            "type": "gpu",
+            "format": "{1} {2} @ {12} GHz",
+            "key": " ├ 󰢮 ",
+            "keyColor": "{{colors.secondary.default.hex}}",
+            "outputColor": "{{colors.primary.default.hex}}"
+        },
+        {
+            "type": "memory",
+            "key": " ├  ",
+            "keyColor": "{{colors.secondary.default.hex}}",
+            "outputColor": "{{colors.primary.default.hex}}"
+        },
+        {
+            "type": "swap",
+            "key": " ├ 󰓡 ",
+            "keyColor": "{{colors.secondary.default.hex}}",
+            "outputColor": "{{colors.primary.default.hex}}"
+        },
+        {
+            "type": "monitor",
+            "key": " └  ",
+            "keyColor": "{{colors.secondary.default.hex}}",
+            "outputColor": "{{colors.primary.default.hex}}"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[37m└──────────────────────────────────────────────────────────────┘"
+        }
+    ]
+}
+
