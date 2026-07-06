@@ -1,0 +1,33 @@
+# ~/.config/matugen/config.toml
+#
+# This is the STATIC base config: templates + reload hooks only.
+# theme-sync.sh copies this file to /tmp/matugen-runtime.toml and
+# appends a [custom_colors] block with the exact colors it pulled
+# out of your GTK theme (gtk_bg, gtk_fg, gtk_accent, etc.) before
+# running matugen — so don't add [custom_colors] here yourself,
+# the script manages that part.
+
+[config]
+# matugen would normally set wallpaper itself if you ran `matugen image ...`,
+# but theme-sync.sh sets wallpaper separately via swww, so this section
+# is left here purely for reference / in case you switch workflows later.
+[config.wallpaper]
+set = false
+
+[templates.waybar]
+input_path  = "~/.config/matugen/templates/waybar-colors.css"
+output_path = "~/.config/waybar/colors.css"
+post_hook   = "killall waybar; sleep 0.3; waybar >/dev/null 2>&1 & disown"
+
+[templates.hyprland]
+input_path  = "~/.config/matugen/templates/hyprland-colors.conf"
+output_path = "~/.config/hypr/colors.conf"
+post_hook   = "hyprctl reload"
+
+[templates.qt5ct]
+input_path  = "~/.config/matugen/templates/qt-colors.conf"
+output_path = "~/.config/qt5ct/colors/matugen.conf"
+
+[templates.qt6ct]
+input_path  = "~/.config/matugen/templates/qt-colors.conf"
+output_path = "~/.config/qt6ct/colors/matugen.conf"
