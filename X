@@ -1,2 +1,6 @@
-http://192.168.15.40:5001/api/opds/6kX70v2wFc034dSywEh28Y4fo3dqAiCUA
-p0BeF3O4gHdkhRsZJWBx
+http://192.168.15.40:5001/api/opds/6kX7
+X
+http://:5001/api/opds/p0BeF3O4gHdkhRsZJWBx
+M
+http://:5000/api/opds/X1ZiXrAnnpW9BL9LL90w
+
