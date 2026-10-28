@@ -3,4 +3,5 @@ X
 http://:5001/api/opds/p0BeF3O4gHdkhRsZJWBx
 M
 http://:5000/api/opds/X1ZiXrAnnpW9BL9LL90w
+https://raw.githubusercontent.com/Kareadita/tach-extension/repo/index.min.json
 
